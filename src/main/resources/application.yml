@@ -1,0 +1,23 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/qing?serverTimezone=GMT%2b8
+    username: root
+    password: 20030513lsq
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml # ????mybatis xml??
+  #configuration:
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+files:
+  upload:
+    path: D:/KesheTmp/files/
+
+
